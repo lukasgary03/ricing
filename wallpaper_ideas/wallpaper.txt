@@ -1,7 +1,7 @@
 Distro: manjaro
 WM: 13wm
 Wallpaper: Nitrogen
-Terminal: urxvt or terminator
+Terminal: terminator
 Shell: zsh
 Bar: Polybar
 Music Client:
@@ -10,7 +10,7 @@ Fetch Script: pfetch? neofetch
 Colorscheme: Generated with pywal / wal
 lock screen: i3lock
 program launcher: rofi
-
+keybindings: xshkd
 
 1: Desktop
 2: Work
