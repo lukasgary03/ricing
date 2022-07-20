@@ -1,7 +1,8 @@
 Distro: manjaro
 WM: 13wm
 Wallpaper: Nitrogen
-Terminal: terminator
+Terminal: alacritty
+Compositor: picom
 Shell: zsh
 Bar: Polybar
 Music Client:
