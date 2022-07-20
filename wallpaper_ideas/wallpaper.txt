@@ -1,5 +1,5 @@
 Distro: manjaro
-WM: 13wm
+WM: 13-gaps
 Wallpaper: Nitrogen
 Terminal: alacritty
 Compositor: picom
@@ -21,3 +21,5 @@ keybindings: xshkd
 
 https://www.youtube.com/watch?v=77-tuFE_pGc&t=312s 
 https://www.youtube.com/watch?v=FX26s8INUYo
+
+front page login of iron man eating the donut img
