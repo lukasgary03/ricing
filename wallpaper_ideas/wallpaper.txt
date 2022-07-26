@@ -13,15 +13,24 @@ lock screen: i3lock
 program launcher: rofi
 keybindings: xshkd
 
-look into conky??
+either conky or eww for on desktop information
+Learn vifm
 
-1: Desktop
-2: Work
-3: Firefox
-4: Terminal
-5: Sys info
+1 Mon Workspace#   Application        2 Mon Workspace #    
+1                 Desktop Window      11
+2                 Work                22
+3                 Firefox             33 
+4                 Terminal            44
+5                 Files               55
 
 https://www.youtube.com/watch?v=77-tuFE_pGc&t=312s 
 https://www.youtube.com/watch?v=FX26s8INUYo
 
-front page login of iron man eating the donut img
+Ideas:
+I open at the close front page lockscreen 5.6 arch wiki section on i3
+screensaver and powermanagemenet is on section 5.5
+Bible googler that uses cli to search google for the terms that I'm wanting
+Stocks organizer/analyzer
+music player -- something perhaps with amazon music?
+Need to figure out how to start applications in a specific window 
+Focused window color needs to be more prominent
