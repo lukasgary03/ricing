@@ -16,6 +16,8 @@ keybindings: xshkd
 either conky or eww for on desktop information
 Learn vifm
 
+$mod+c moves workspace to left monitor
+$mod+v moves workspace to right monitor
 1 Mon Workspace#   Application        2 Mon Workspace #    
 1                 Desktop Window      11
 2                 Work                22
