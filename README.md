@@ -157,3 +157,6 @@ VHV
 monitor=HDMI-A-1, 1920x1080, 0x0, 1, transform, 1 #HKC
 monitor=DP-1, 2560x1080@100.00, 1080x0, 1
 monitor=HDMI-A-2, 1920x1080, 3640x0, 1, transform, 3 #22cwa
+
+
+yt dlp something like that
