@@ -1,3 +1,5 @@
+** NOTE: When making rofi-wayland, uninstall that using yay then install it with yay as just rofi. IDK why installer chooses the wayland version when general works great
+
 # ricing
 
 Putting all my designs and process of creating a linux desktop environment in this repo
