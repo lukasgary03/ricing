@@ -138,26 +138,26 @@ bind = , XF86Tools, exec, alacritty --class dotfiles-floating -e ~/dotfiles/hypr
 
 HHH
 monitor=HDMI-A-1, 1920x1080, 0x0, 1 #HKC
-monitor=DP-1, 2560x1080@100.00, 1920x0, 1
+monitor=DP-2, 2560x1080@100.00, 1920x0, 1 #wide
 monitor=HDMI-A-2, 1920x1080, 4480x0, 1 #22cwa
 
 
 HHV
-monitor=HDMI-A-1, 1920x1080, 0x0, 1, #HKC
-monitor=DP-1, 2560x1080@100.00, 1920x0, 1
+monitor=HDMI-A-1, 1920x1080, 0x0, 1 #HKC
+monitor=DP-2, 2560x1080@100.00, 1920x0, 1 #wide
 monitor=HDMI-A-2, 1920x1080, 4480x0, 1, transform, 3 #22cwa
 
 
 VHH
 monitor=HDMI-A-1, 1920x1080, 0x0, 1, transform, 1 #HKC
-monitor=DP-1, 2560x1080@100.00, 1080x0, 1
+monitor=DP-2, 2560x1080@100.00, 1080x0, 1
 monitor=HDMI-A-2, 1920x1080, 3640x0, 1 #22cwa
 
 
 
 VHV
 monitor=HDMI-A-1, 1920x1080, 0x0, 1, transform, 1 #HKC
-monitor=DP-1, 2560x1080@100.00, 1080x0, 1
+monitor=DP-2, 2560x1080@100.00, 1080x0, 1
 monitor=HDMI-A-2, 1920x1080, 3640x0, 1, transform, 3 #22cwa
 
 
