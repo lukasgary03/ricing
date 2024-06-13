@@ -37,103 +37,100 @@ https://www.chunkbase.com/apps/seed-map#-4649662074261581818
         // END CLOCK FORMAT
     },
 
-
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 # Key bindings
 # name: "Default"
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 
 # SUPER KEY
 $mainMod = SUPER
 
 # Applications
-bind = $mainMod, RETURN, exec, ~/dotfiles/.settings/terminal.sh
-bind = $mainMod, F, exec, ~/dotfiles/.settings/browser.sh
-bind = $mainMod, S, exec, chromium spotify.com
-bind = $mainMod, N, exec, chromium notion.so
-bind = $mainMod, B, exec, google-chrome-stable luna.amazon.com
+bind = $mainMod, RETURN, exec, ~/dotfiles/.settings/terminal.sh # Open the terminal
+bind = $mainMod, F, exec, ~/dotfiles/.settings/browser.sh # Open the browser
+bind = $mainMod, S, exec, chromium spotify.com # Open spotify
+bind = $mainMod, N, exec, chromium notion.so # Open notion
+bind = $mainMod, N, exec, chromium luna.amazon.com # Open fortnite online
+
 # Windows
-bind = $mainMod, Q, killactive
-bind = $mainMod, T, fullscreen
-bind = $mainMod, E, exec, ~/dotfiles/scripts/filemanager.sh
-bind = $mainMod, G, togglefloating
-bind = $mainMod SHIFT, T, exec, ~/dotfiles/hypr/scripts/toggleallfloat.sh
-bind = $mainMod, C, togglesplit
-bind = $mainMod, H, movefocus, l
-bind = $mainMod, L, movefocus, r
-bind = $mainMod, K, movefocus, u
-bind = $mainMod, J, movefocus, d
-bind = $mainMod SHIFT, J, movewindow, d
-bind = $mainMod SHIFT, H, movewindow, l
-bind = $mainMod SHIFT, L, movewindow, r
-bind = $mainMod SHIFT, K, movewindow, u
-bindm = $mainMod, mouse:272, movewindow
-bindm = $mainMod, mouse:273, resizewindow
-bind = $mainMod SHIFT, right, resizeactive, 100 0
-bind = $mainMod SHIFT, left, resizeactive, -100 0
-bind = $mainMod SHIFT, up, resizeactive, 0 -100
-bind = $mainMod SHIFT, down, resizeactive, 0 100
+bind = $mainMod, Q, killactive # Kill active window
+bind = $mainMod, T, fullscreen # Set active window to fullscreen
+bind = $mainMod, G, togglefloating # Toggle active windows into floating mode
+bind = $mainMod, E, exec, ~/dotfiles/.settings/filemanager.sh # Open the filemanager
+bind = $mainMod SHIFT, T, exec, ~/dotfiles/hypr/scripts/toggleallfloat.sh # Toggle all windows into floating mode
+bind = $mainMod, C, togglesplit # Toggle split
+bind = $mainMod, H, movefocus, l # Move focus left
+bind = $mainMod, L, movefocus, r # Move focus right
+bind = $mainMod, K, movefocus, u # Move focus up
+bind = $mainMod, J, movefocus, d # Move focus down
+bind = $mainMod SHIFT, H, movewindow, l # Move focus left
+bind = $mainMod SHIFT, L, movewindow, r # Move focus right
+bind = $mainMod SHIFT, K, movewindow, u # Move focus up
+bind = $mainMod SHIFT, J, movewindow, d # Move focus down
+bindm = $mainMod, mouse:272, movewindow # Move window with the mouse
+bindm = $mainMod, mouse:273, resizewindow # Resize window with the mouse
+bind = $mainMod SHIFT, right, resizeactive, 100 0 # Increase window width with keyboard
+bind = $mainMod SHIFT, left, resizeactive, -100 0 # Reduce window width with keyboard
+bind = $mainMod SHIFT, down, resizeactive, 0 100 # Increase window height with keyboard
+bind = $mainMod SHIFT, up, resizeactive, 0 -100 # Reduce window height with keyboard
+bind = $mainMod SHIFT, G, togglegroup # Toggle window group
 
 # Actions
-bind = $mainMod, PRINT, exec, ~/dotfiles/hypr/scripts/screenshot.sh
-bind = $mainMod, M, exec, wlogout
-bind = $mainMod SHIFT, W, exec, ~/dotfiles/hypr/scripts/wallpaper.sh
-bind = $mainMod CTRL, W, exec, ~/dotfiles/hypr/scripts/wallpaper.sh select
-bind = $mainMod, SPACE, exec, rofi -show drun
-bind = $mainMod CTRL, H, exec, ~/dotfiles/hypr/scripts/keybindings.sh
-bind = $mainMod SHIFT, B, exec, ~/dotfiles/waybar/launch.sh
-bind = $mainMod SHIFT, R, exec, ~/dotfiles/hypr/scripts/loadconfig.sh
-bind = $mainMod CTRL, F, exec, ~/dotfiles/scripts/filemanager.sh
-bind = $mainMod CTRL, C, exec, ~/dotfiles/scripts/cliphist.sh
-bind = $mainMod, V, exec, ~/dotfiles/scripts/cliphist.sh
-bind = $mainMod CTRL, T, exec, ~/dotfiles/waybar/themeswitcher.sh
-bind = $mainMod CTRL, S, exec, alacritty --class dotfiles-floating -e ~/dotfiles/hypr/start-settings.sh
+bind = $mainMod SHIFT, A, exec, ~/dotfiles/hypr/scripts/toggle-animations.sh # Toggle animations
+bind = $mainMod, PRINT, exec, ~/dotfiles/hypr/scripts/screenshot.sh # Take a screenshot
+bind = $mainMod, M, exec, wlogout # Start wlogout
+bind = $mainMod SHIFT, W, exec, ~/dotfiles/hypr/scripts/wallpaper.sh # Change the wallpaper
+bind = $mainMod CTRL, W, exec, ~/dotfiles/hypr/scripts/wallpaper.sh select # Open wallpaper selector
+bind = $mainMod, SPACE, exec, rofi -show drun -replace -i # Open application launcher
+bind = $mainMod CTRL, H, exec, ~/dotfiles/hypr/scripts/keybindings.sh # Show keybindings
+bind = $mainMod SHIFT, B, exec, ~/dotfiles/waybar/launch.sh # Reload waybar
+bind = $mainMod CTRL, B, exec, ~/dotfiles/waybar/toggle.sh # Toggle waybar
+bind = $mainMod SHIFT, R, exec, ~/dotfiles/hypr/scripts/loadconfig.sh # Reload hyprland config
+bind = $mainMod, V, exec, ~/dotfiles/scripts/cliphist.sh # Open clipboard manager
+bind = $mainMod CTRL, T, exec, ~/dotfiles/waybar/themeswitcher.sh # Open waybar theme switcher
+bind = $mainMod CTRL, S, exec, ~/dotfiles/apps/ML4W_Dotfiles_Settings-x86_64.AppImage # Open ML4W Dotfiles Settings app
+bind = $mainMod SHIFT, S, exec, ~/dotfiles/hypr/scripts/hyprshade.sh # Toggle screenshader
+bind = $mainMod ALT, G, exec, ~/dotfiles/hypr/scripts/gamemode.sh # Toggle game mode
 
 # Workspaces
-bind = $mainMod, 1, workspace, 1
-bind = $mainMod, 2, workspace, 2
-bind = $mainMod, 3, workspace, 3
-bind = $mainMod, 4, workspace, 4
-bind = $mainMod, 5, workspace, 5
-bind = $mainMod, 6, workspace, 6
-bind = $mainMod, 7, workspace, 7
-bind = $mainMod, 8, workspace, 8
-bind = $mainMod, 9, workspace, 9
-bind = $mainMod, 0, workspace, 10
-bind = $mainMod SHIFT, 1, movetoworkspace, 1
-bind = $mainMod SHIFT, 2, movetoworkspace, 2
-bind = $mainMod SHIFT, 3, movetoworkspace, 3
-bind = $mainMod SHIFT, 4, movetoworkspace, 4
-bind = $mainMod SHIFT, 5, movetoworkspace, 5
-bind = $mainMod SHIFT, 6, movetoworkspace, 6
-bind = $mainMod SHIFT, 7, movetoworkspace, 7
-bind = $mainMod SHIFT, 8, movetoworkspace, 8
-bind = $mainMod SHIFT, 9, movetoworkspace, 9
-bind = $mainMod SHIFT, 0, movetoworkspace, 10
-bind = $mainMod, mouse_down, workspace, e+1
-bind = $mainMod, mouse_up, workspace, e-1
-bind = $mainMod CTRL, down, workspace, empty
+bind = $mainMod, 1, workspace, 1 # Open workspace 1
+bind = $mainMod, 2, workspace, 2 # Open workspace 2
+bind = $mainMod, 3, workspace, 3 # Open workspace 3
+bind = $mainMod, 4, workspace, 4 # Open workspace 4
+bind = $mainMod, 5, workspace, 5 # Open workspace 5
+bind = $mainMod, 6, workspace, 6 # Open workspace 6
+bind = $mainMod, 7, workspace, 7 # Open workspace 7
+bind = $mainMod, 8, workspace, 8 # Open workspace 8
+bind = $mainMod, 9, workspace, 9 # Open workspace 9
+bind = $mainMod, 0, workspace, 10 # Open workspace 10
+bind = $mainMod SHIFT, 1, movetoworkspace, 1 # Move active window to workspace 1
+bind = $mainMod SHIFT, 2, movetoworkspace, 2 # Move active window to workspace 2
+bind = $mainMod SHIFT, 3, movetoworkspace, 3 # Move active window to workspace 3
+bind = $mainMod SHIFT, 4, movetoworkspace, 4 # Move active window to workspace 4
+bind = $mainMod SHIFT, 5, movetoworkspace, 5 # Move active window to workspace 5
+bind = $mainMod SHIFT, 6, movetoworkspace, 6 # Move active window to workspace 6
+bind = $mainMod SHIFT, 7, movetoworkspace, 7 # Move active window to workspace 7
+bind = $mainMod SHIFT, 8, movetoworkspace, 8 # Move active window to workspace 8
+bind = $mainMod SHIFT, 9, movetoworkspace, 9 # Move active window to workspace 9
+bind = $mainMod SHIFT, 0, movetoworkspace, 10 # Move active window to workspace 10
+bind = $mainMod, mouse_down, workspace, e+1 # Open next workspace
+bind = $mainMod, mouse_up, workspace, e-1 # Open previous workspace
+bind = $mainMod CTRL, down, workspace, empty # Open the next empty workspace
 
 # Fn keys
-bind = , XF86MonBrightnessUp, exec, brightnessctl -q s +10%
-bind = , XF86MonBrightnessDown, exec, brightnessctl -q s 10%-
-bind = , XF86AudioRaiseVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ +5%
-bind = , XF86AudioLowerVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -5%
-bind = , XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
-bind = , XF86AudioPlay, exec, playerctl play-pause
-bind = , XF86AudioPause, exec, playerctl pause
-bind = , XF86AudioNext, exec, playerctl next
-bind = , XF86AudioPrev, exec, playerctl previous
-bind = , XF86AudioMicMute, exec, pactl set-source-mute @DEFAULT_SOURCE@ toggle
-bind = , XF86Calculator, exec, qalculate-gtk
-bind = , XF86Lock, exec, swaylock
-bind = , XF86Tools, exec, alacritty --class dotfiles-floating -e ~/dotfiles/hypr/settings/settings.sh
-
-# Passthrough SUPER KEY to Virtual Machine
-#bind = $mainMod, P, submap, passthru
-#submap = passthru
-#bind = SUPER, Escape, submap, reset
-#submap = reset
+bind = , XF86MonBrightnessUp, exec, brightnessctl -q s +10% # Increase brightness by 10%
+bind = , XF86MonBrightnessDown, exec, brightnessctl -q s 10%- # Reduce brightness by 10%
+bind = , XF86AudioRaiseVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ +5% # Increase volume by 5%
+bind = , XF86AudioLowerVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -5% # Reduce volume by 5%
+bind = , XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle # Toggle mute
+bind = , XF86AudioPlay, exec, playerctl play-pause # Audio play pause
+bind = , XF86AudioPause, exec, playerctl pause # Audio pause
+bind = , XF86AudioNext, exec, playerctl next # Audio next
+bind = , XF86AudioPrev, exec, playerctl previous # Audio previous
+bind = , XF86AudioMicMute, exec, pactl set-source-mute @DEFAULT_SOURCE@ toggle # Toggle microphone
+bind = , XF86Calculator, exec, qalculate-gtk # Open calculator
+bind = , XF86Lock, exec, hyprlock # Open screenlock
+bind = , XF86Tools, exec, alacritty --class dotfiles-floating -e ~/dotfiles/apps/ML4W_Dotfiles_Settings-x86_64.AppImage # Open ML4W Dotfiles Settings app
 
 
 HHH
