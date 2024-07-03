@@ -37,10 +37,10 @@ https://www.chunkbase.com/apps/seed-map#-4649662074261581818
         // END CLOCK FORMAT
     },
 
-# -----------------------------------------------------
+# ----------------------------------------------------- 
 # Key bindings
 # name: "Default"
-# -----------------------------------------------------
+# ----------------------------------------------------- 
 
 # SUPER KEY
 $mainMod = SUPER
@@ -48,9 +48,10 @@ $mainMod = SUPER
 # Applications
 bind = $mainMod, RETURN, exec, ~/dotfiles/.settings/terminal.sh # Open the terminal
 bind = $mainMod, F, exec, ~/dotfiles/.settings/browser.sh # Open the browser
-bind = $mainMod, S, exec, chromium spotify.com # Open spotify
+bind = $mainMod, S, exec, spotify # Open spotify
 bind = $mainMod, N, exec, chromium notion.so # Open notion
 bind = $mainMod, N, exec, chromium luna.amazon.com # Open fortnite online
+bind = $mainMod, O, exec, obsidian # Open obsidian
 
 # Windows
 bind = $mainMod, Q, killactive # Kill active window
@@ -73,14 +74,14 @@ bind = $mainMod SHIFT, right, resizeactive, 100 0 # Increase window width with k
 bind = $mainMod SHIFT, left, resizeactive, -100 0 # Reduce window width with keyboard
 bind = $mainMod SHIFT, down, resizeactive, 0 100 # Increase window height with keyboard
 bind = $mainMod SHIFT, up, resizeactive, 0 -100 # Reduce window height with keyboard
-bind = $mainMod SHIFT, G, togglegroup # Toggle window group
+bind = $mainMod, G, togglegroup # Toggle window group
 
 # Actions
 bind = $mainMod SHIFT, A, exec, ~/dotfiles/hypr/scripts/toggle-animations.sh # Toggle animations
 bind = $mainMod, PRINT, exec, ~/dotfiles/hypr/scripts/screenshot.sh # Take a screenshot
 bind = $mainMod, M, exec, wlogout # Start wlogout
-bind = $mainMod SHIFT, W, exec, ~/dotfiles/hypr/scripts/wallpaper.sh # Change the wallpaper
-bind = $mainMod CTRL, W, exec, ~/dotfiles/hypr/scripts/wallpaper.sh select # Open wallpaper selector
+bind = $mainMod SHIFT, W, exec, waypaper --random # Change the wallpaper
+bind = $mainMod CTRL, W, exec, waypaper # Open wallpaper selector
 bind = $mainMod, SPACE, exec, rofi -show drun -replace -i # Open application launcher
 bind = $mainMod CTRL, H, exec, ~/dotfiles/hypr/scripts/keybindings.sh # Show keybindings
 bind = $mainMod SHIFT, B, exec, ~/dotfiles/waybar/launch.sh # Reload waybar
@@ -117,6 +118,12 @@ bind = $mainMod, mouse_down, workspace, e+1 # Open next workspace
 bind = $mainMod, mouse_up, workspace, e-1 # Open previous workspace
 bind = $mainMod CTRL, down, workspace, empty # Open the next empty workspace
 
+# Passthrough SUPER KEY to Virtual Machine
+bind = $mainMod, P, submap, passthru # Passthrough SUPER key to virtual machine
+submap = passthru
+bind = SUPER, Escape, submap, reset # Get SUPER key back from virtual machine
+submap = reset
+
 # Fn keys
 bind = , XF86MonBrightnessUp, exec, brightnessctl -q s +10% # Increase brightness by 10%
 bind = , XF86MonBrightnessDown, exec, brightnessctl -q s 10%- # Reduce brightness by 10%
@@ -131,6 +138,7 @@ bind = , XF86AudioMicMute, exec, pactl set-source-mute @DEFAULT_SOURCE@ toggle #
 bind = , XF86Calculator, exec, qalculate-gtk # Open calculator
 bind = , XF86Lock, exec, hyprlock # Open screenlock
 bind = , XF86Tools, exec, alacritty --class dotfiles-floating -e ~/dotfiles/apps/ML4W_Dotfiles_Settings-x86_64.AppImage # Open ML4W Dotfiles Settings app
+
 
 
 HHH
